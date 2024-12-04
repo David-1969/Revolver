@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detalhes do Álbum</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Header principal -->
+    <header class="header-bar">
+        Compact-Disc @
+    </header>
+
+    <!-- Navegação com a barra de navegação -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="collapse navbar-collapse">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item"><a class="nav-link" href="#">Perfil</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">Página Inicial</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">Pesquisa</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">Categorias</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">Populares</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">Sair</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Main com informações detalhadas do álbum -->
+    <main class="container mt-5">
+        <div class="row">
+            <!-- Imagem do álbum em formato maior -->
+            <div class="col-md-6">
+                <img id="albumImage" src="revolver.jpeg" alt="Imagem do Álbum" class="img-fluid">
+            </div>
+            <!-- Título e sinopse do álbum -->
+  <h2 id="albumTitle">Revolver</h2>
+  <p id="albumDescription"> 
+    Revolver, lançado pelos Beatles em 1966, é um álbum inovador que marcou a transição do grupo para uma abordagem mais experimental e psicodélica. Misturando rock, folk, blues, música clássica e elementos de música indiana, o álbum apresenta uma sonoridade diversificada e ousada. Faixas como "Eleanor Rigby" e "Tomorrow Never Knows" mostram a exploração de novas técnicas de gravação e a profundidade lírica, abordando temas como amor, existencialismo e a percepção da realidade. Revolver é considerado um dos álbuns mais influentes da história da música, desafiando convenções e expandindo os limites do rock. Sua produção inovadora e as experimentações criativas ajudaram a definir uma nova era musical. O álbum continua sendo um marco na evolução do rock, da música pop e da cultura popular.</p>
+ <h2 id="albumTitle">Tracklist</h2>
+ <p id="albumDescription"> <strong>Lado 1:</strong> Taxman -
+    Eleanor Rigby -
+    I'm Only Sleeping -
+    Love You To -
+    Here, There and Everywhere -
+    Yellow Submarine -
+    She Said She Said.
+    <p id="albumDescription"> <strong>Lado 2:</strong> Good Day Sunshine -
+        And Your Bird Can Sing -
+        For No One -
+        Doctor Robert -
+        I Want to Tell You -
+        Got to Get You into My Life -
+        Tomorrow Never Knows.</p>
+
+            <div class="col-md-6">
+                <!-- Resumo do álbum -->
+                <h2 id="albumTitle"></h2>
+                <p id="albumDescription"></p>
+
+                <div class="container mt-5">
+                    <h2>Avalie o Álbum</h2>
+            
+                    <!-- Sistema de avaliação de estrelas -->
+                    <div id="starRating" class="d-flex">
+                        <!-- Estrelas serão geradas dinamicamente com JavaScript -->
+                    </div>
+                    <div id="ratingMessage" class="mt-2"></div>
+            
+                    <h4 class="mt-4">Resenha:</h4>
+                    <textarea id="reviewText" class="form-control" rows="4"></textarea>
+                    <button id="submitReview" class="btn btn-primary mt-2">Enviar Resenha</button>
+            
+                    <h4 class="mt-4">Resenhas:</h4>
+                    <div id="reviewsList">
+                        <!-- Resenhas serão exibidas aqui -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
